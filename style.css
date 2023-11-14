@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: position 0.44s ease-in-out;
+}
+
+html {
+	color: var(--gray-blue);
+	font-size: 18px;
+	font-family: "Public Sans", sans-serif;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Root Colors */
+:root {
+	/* Primary Colors */
+	--drk-blue: hsl(233, 26%, 24%);
+	--lime-green: hsl(136, 65%, 51%);
+	--brg-cyan: hsl(192, 70%, 51%);
+
+	/* Neutral Colors */
+	--gray-blue: hsl(233, 8%, 62%);
+	--lght-gray-blue: hsl(220, 16%, 96%);
+	--pale-lght-gray: hsl(0, 0%, 98%);
+	--pale-white: hsl(0, 0%, 100%);
+}
+
+/* Heading Content */
+h1,
+h3,
+h5 {
+	font-weight: 400;
+	color: #000;
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 2.75rem;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 2.44rem;
+	font-weight: 300;
+}
+
+h5 {
+	font-size: 1.33rem;
+	cursor: pointer;
+	font-weight: 300;
+	transition: 0.33s ease-in-out;
+}
+
+h5:hover {
+	color: var(--lime-green);
+}
+
+p {
+	padding-bottom: 24px;
+	padding-top: 24px;
+	line-height: 1.5;
+}
+
+.req-btn {
+	display: inline-block;
+	border-radius: 50px;
+	padding: 13px 45px;
+	font-weight: 300;
+	color: var(--pale-white);
+	background-image: linear-gradient(90deg, var(--lime-green), var(--brg-cyan));
+	transition: filter 0.33s ease-in-out;
+	transition: all 0.24s ease-in-out;
+	font-weight: 700;
+}
+
+.req-btn:hover {
+	filter: brightness(1.33);
+}
+
+nav {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10em;
+	border-bottom: 2px solid rgba(0, 0, 0, 0);
+	background-color: var(--pale-white);
+}
+
+nav .nav-menu {
+	flex-basis: 400px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Menu Item */
+.menu-itm {
+	cursor: pointer;
+	padding: 2em 0;
+	padding-bottom: 40px;
+	border-bottom: 2.66px solid rgba(0, 0, 0, 0);
+	transition: all 0.33s ease-in-out;
+}
+
+.menu-itm:hover {
+	color: var(--lime-green);
+	border-bottom: 2.66px solid var(--lime-green);
+}
+
+/* Header Container */
+#header_container {
+	height: 70vh;
+	position: relative;
+	/* background-color: red; */
+}
+
+.img-bg-intro {
+	position: absolute;
+	top: -260px;
+	right: -300px;
+	z-index: -3;
+}
+
+.header-content {
+	display: flex;
+	position: relative;
+	z-index: 1;
+	justify-content: space-between;
+	align-items: center;
+	left: 10em;
+	top: -120px;
+}
+
+.header-content .content {
+	flex-basis: 450px;
+}
+
+.header-content .image-mockup {
+	position: relative;
+	right: 80px;
+	height: 100%;
+	z-index: -2;
+}
+
+#features_container {
+	background-color: var(--lght-gray-blue);
+	padding: 4em 10em;
+}
+
+.features-content {
+	width: 700px;
+	margin-bottom: 2.33em;
+}
+
+.img-feature {
+	margin-bottom: 1em;
+}
+
+#features_container main {
+	display: flex;
+	gap: 18px;
+	justify-content: space-between;
+}
+
+/* Article Section */
+#article_section {
+	padding: 3em 10em;
+}
+
+#articles {
+	display: flex;
+	column-gap: 1em;
+	margin-top: 3em;
+}
+
+/* Article Topic Images */
+.topic-image {
+	width: 100%;
+	height: 270px;
+	background-size: cover;
+	border-radius: 8px 8px 0 0;
+}
+
+.toi-1 {
+	background-image: url("./images/image-currency.jpg");
+}
+.toi-2 {
+	background-image: url("./images/image-restaurant.jpg");
+}
+.toi-3 {
+	background-image: url("./images/image-plane.jpg");
+}
+.toi-4 {
+	background-image: url("./images/image-confetti.jpg");
+}
+
+.article-description {
+	padding: 1em 1.44em;
+}
+
+/* Footer Section */
+footer {
+	background: var(--drk-blue);
+	padding: 3em 10em;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.author {
+	font-size: 14px;
+}
+
+aside {
+	display: flex;
+	width: 700px;
+	justify-content: space-between;
+}
+
+.cont-01 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	text-align: center;
+	height: 100px;
+}
+
+.icon-media {
+	margin: 0 0.14em;
+	transition: 0.33s ease-in-out;
+}
+
+.icon-media:hover {
+	filter: invert(58%) sepia(89%) saturate(376%) hue-rotate(84deg)
+		brightness(97%) contrast(94%);
+}
+
+.cont-02 {
+	display: flex;
+	flex-basis: 400px;
+	justify-content: space-between;
+}
+
+.cont-02 .links {
+	list-style: none;
+}
+
+.links p {
+	margin-bottom: 1.33em;
+	padding: 0;
+	cursor: pointer;
+	transition: color 0.22s ease-in;
+}
+
+.links p:hover {
+	color: var(--lime-green);
+}
+
+.cont-03 {
+	text-align: right;
+}
